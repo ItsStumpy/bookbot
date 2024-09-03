@@ -1,10 +1,10 @@
 def main():
-  book_path = "books/frankenstein.txt"
+  book_path = "books/random_text_file.txt"
   text = get_book_text(book_path)
   num_words = get_num_words(text)
   num_letters = get_num_letters(text)
   converted_dict = convert_dict_to_list(num_letters)
-  print("--- Begin report of books/frankenstein.txt ---")
+  print("--- Begin report of books/random_text_file.txt ---")
   print(f"{num_words} words found in the document")
   print(f"{converted_dict}")
   print("--- End Report ---")
@@ -34,6 +34,6 @@ def convert_dict_to_list(letters):
       continue
     new_list.append(f"The '{k}' character was found {v} times")
     formatted_list = "\n".join(new_list)
-  return formatted_list
+  return formatted_list # type: ignore
 
 main()
