@@ -5,9 +5,14 @@
 
 This project is to showcase how to read data from a file and traverse its content and grab necessary/specific pieces.
 
+
+## How Do I Test This?
+
+Simple, just `git clone` the project, add a `.txt` file of your choosing, then run the command `python main.py` and look at the results in the console!
+
 ## The How
 
-To start, we read data from our desired `.txt` file, found in [books](./books/)
+To start, we read data from our desired `.txt` file, found in my personal `books` folder which is currently ignored.
 ``` py
 def get_book_text(path):
   with open(path) as f:
